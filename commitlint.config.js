@@ -1,3 +1,4 @@
+// config: Changes to the project configuration files does not affect a build system
 // build: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
 // ci: Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)
 // docs: Documentation only changes
@@ -30,6 +31,7 @@ module.exports = {
         2,
         'always',
         [
+          'config',
           'build',
           'chore',
           'ci',
